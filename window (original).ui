@@ -1,0 +1,28 @@
+#include <QLineF>
+<ui version="4.0">
+<class>Window</class>
+<widget class="QMainWindow" name="Window" >
+<property name="geometry" >
+   <rect>
+QLineF line(10.0, 80.0, 90.0, 20.0);
+QPainter(this);
+painter.drawLine(line);
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Window</string>
+  </property>
+  <widget class="QMenuBar" name="menuBar" />
+  <widget class="QToolBar" name="mainToolBar" />
+  <widget class="QWidget" name="centralWidget" />
+  <widget class="QStatusBar" name="statusBar" />
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>
