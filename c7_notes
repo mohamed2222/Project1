@@ -1,0 +1,44 @@
+#include <"debug.h">
+
+
+
+
+
+int main(){
+	intit_debuguar0();
+	const uint8_t = segments [10] = {0xFC, 0x60, 0xDA, 0xF2, 0x66, 0xB6, 0xBE, 0xFE, 0xF6};
+	int i =8;
+	
+	
+	i = (i ==9 ? 0: i+1); 
+	
+	
+	int g;
+	//'slash r' - makes it compatible with windows (not required on windows)
+	
+	//getchar();
+	
+	fprintf(stderr, "overflow"); //printf is shorthand for fprintf(stdout)
+	
+	getchar("%d", &g); //stores value entered in memory
+	
+	
+	
+	
+	SPI
+	
+	spi_tx (P0T0 OR DEC); POT 0 - ADDRESS, DEC - COMMAND BITS
+	
+	set_time(now);
+	now= get_time();
+	
+	i2c (1<<7); //extract one bit in position 7
+	//rtcc_m [7] = i2c_rx_nack(); //stops data transmission
+	
+	
+	
+	
+	return 0;
+
+
+}

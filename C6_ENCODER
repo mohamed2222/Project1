@@ -1,0 +1,47 @@
+#include <avr/io.h>
+#include <util/delay.h>
+
+
+const uint8_t = segments [10] = {0xFC, 0x60, 0xDA, 0xF2, 0x66, 0xB6, 0xBE, 0xFE, 0xF6};
+int i =8;
+
+int rotary_AB(rot){
+	
+	return(rot & _BV (PC1)) OR (rot &_BV (PC0)) } //this tests pins 0 and 1 on port c - e.g. 0 is active '1' and pin 1 is active low '0' then it returns '10', i.e. (3 in hex)
+
+int main(){
+	DDRA = 0xFF;
+	PORTA = segments[i];
+	PORTC = 0xFF;
+	lastAB = rotary_AB (PINC);
+	delay(1); //wait before taking second sample
+	
+	
+	
+	
+		while ((PIN C & _BV(7)) !=0){//this checks whether the input is ACTIVE HIGH then sets appropriate segment
+			AB = rotary_AB (PINC);
+			If((AB == 0x0 && lastAB == 0x2) or (AB == 0x3 && last_AB == 0x1)){ //this checks 'LAST TWO BITS' whether 
+				the input changes from active high to active low, if this is the casethen the encoder is rotating anticlockwise/clockwise and 
+				the thing is incremented - else it is decremented
+				
+				i = (i ==9 ? 0: i+1); 
+				PORTA = segments[i];
+			else{
+				i = (i ==9 ? 0: i-1); //this puts decrements
+				PORTA = segments[i];
+			}
+			while ((PIN C & _BV(7)) !=0){
+				delay_ms(1); //add a delay to debounce switch - it will stay in this loop until encoder rotated again (as input is not ACTIVE HIGH)
+				}
+			
+			
+			}
+
+		last_AB = AB; //set last_AB to AB (i.e. last sample to current sample) } //inside the first while loop
+
+
+
+
+
+}

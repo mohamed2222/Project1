@@ -1,0 +1,22 @@
+
+Vector v = {0, NULL}// TWO TYPES: INTEGER, POINTER
+
+unsigned int length;
+double  *element;
+
+
+unsigned int rows;
+unsigned int cols;
+double  **element;//pointer to pointer to beginning of double (OTHER APPROACH IS CREATING A LONG LIST WITH ROW NUMBERS FIRST FOLLOWED BY COLUMNS)
+
+free (ptr) //ptr to beginning of memory block
+
+
+gcc -c file.c -o file.o (compile each file individually WITH MAIN PROGRAM LAST)
+gcc file1.o file2.o file3.o -o program (linked)
+
+
+
+int main(int arg c, char *argv[])//arg c - number of arguments (program name counts as an argument)
+//arg v - contains array of strings
+

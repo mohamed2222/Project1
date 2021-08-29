@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <stdlib.h>
+// use lecture slides
+
+//int myname(int my);
+
+
+int plotval(float x, const int width){
+    
+    return 0;
+}
+
+int main()
+{
+    plotval(5,55);
+    //int x = 1;
+    //printf("x=%d modified to %d\n", x, myname (x));
+    //int a = 10;
+    //int b = 11;
+    //if (a=b){//any value that is not zero is TRUE
+        //printf("%d\n",a);
+    //}
+    
+    //int i;
+    //for (i=0; i<10;i++){
+        //printf ("%d", i);
+    }
+    
+    //while (!(f=read_flag()));
+
+    //return 0;
+
+
+//int myname (int myin){
+    
+    //return(++myin);
+    
+//unsigned long x = 0 UL;
+//printf("x = %010 lu \n", x);
+//endless loop: for (;;) {OUTPUT} OR while
+//void 'function' means it returns nothing
+// gcc compile part1.c-lm (compile with a math library)
+//char name[100], printf[name] prints first element
+//if (x%y) - so if x%y is not zero (i.e. not divisible) then it is TRUE
+
+//a = 0.5 * (1 + sin(PH_A + FREQ_A*X*PI/180)); 
+// PH_A IS A PREPROCESSED DEFINED VALUE AND FREQ_A IS ALSO THAT)
+//printf(RED  "*\n"  RESET)
+
+
+
+
+
+
+
+
+float approxsin (float x, int k){
+int n; float sum=0;
+
+for (n=0; n<=k;k+++){
+
+sum += pow(-1,n)/fact(2N+1) * pow(x,2*n+1);              //useful when the variable to be incremented is complex
+
+}
+
+return (sum); //returns a value so the function could be assigned to a variable
+
+}
+
+
+unsigned long fact(int n){
+
+if (!n){    // if n is zero
+return 1;
+
+}
+else{
+
+return(n*fact(n-1));
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

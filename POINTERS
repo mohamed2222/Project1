@@ -1,0 +1,32 @@
+char s [] = "Hello"; //stores a STRING
+char *s = "Hello"; //different way of storing a string
+char *stringpOINTER = NULL;
+
+char str = "Hello (backslash)ASCII code"; //inserts character into stringpOINTER
+
+int pInt; //reserved space in memory to store address of a variable
+
+pInt = &i; //finds address of 'i'
+
+%p = format specifer for address 
+
+*a = *a * 2; //find value at a and multiply by 2
+return *a//returns value in a at address, so changes it permanently
+
+//& finds variable in that address (opposite of *)
+
+passByReference(&i);
+int passByReference(int *a);//good practice to name functions in the beginning
+
+printf("%s", s);
+
+
+
+FILE *ftpr
+
+char buffer;
+
+fptr = fopen("pointer.c","r");
+while (buffer = fgetc(ftpr)) !=EOF)//end of file (EOF)
+		printf("%c",buffer);
+

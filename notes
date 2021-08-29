@@ -1,0 +1,6 @@
+FILE *f = fopen ("new.txt", r);
+int c = getc(f);
+
+fprintf( stdout, c );
+
+while (best_ifit > epsilon && gen<MAX_gen)
