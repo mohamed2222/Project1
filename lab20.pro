@@ -13,12 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-    receive.cpp \
-    transmit.cpp
+        window.cpp
 
-HEADERS  += \
-    receive.h \
-    transmit.h
+HEADERS  += window.h
 
 FORMS    += window.ui
 
